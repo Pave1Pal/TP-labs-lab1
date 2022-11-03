@@ -11,7 +11,7 @@ class JsonDataReader(DataReader):
             jsonStudents = json.loads(file.read())
             for name in jsonStudents:
                 students[name] = []
-                jsonSubjects = jsonStudents[name]
+                jsonSubjects: dict[str, int] = jsonStudents[name]
 
                 for subj in jsonSubjects:
                     score = jsonSubjects[subj]

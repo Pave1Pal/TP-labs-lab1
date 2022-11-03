@@ -24,6 +24,7 @@ def main():
     debtorFinder = StudyDebtorFinder()
     debtors = debtorFinder.find(students)
     print("Debtors: ", debtors)
+    print(len(debtors))
 
 
 if __name__ == "__main__":

@@ -4,8 +4,7 @@ from Types import DataType
 class StudyDebtorFinder:
 
     def find(self, students: DataType) -> list[str]:
-        debtors: list[str]
-        debtors = []
+        debtors: list[str] = []
         for name in students:
             subjectsInfo = students[name]
             hasDebt = False
